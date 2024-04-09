@@ -9,9 +9,12 @@ void display() {
         printf("\t %d", i);
    
     printf("\nAlive-->");
-    for(int i = 1; i <= n; i++)
+    for(int i = 1; i <= n; i++){
         printf("\t %d", list[i]);
-   
+       if(list[i]){
+            c=i;
+        }
+    }
     printf("\nCoordinator is::%d", c);
 }
 
